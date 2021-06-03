@@ -27,6 +27,6 @@ def bubble_sort(array):
             previous = num
             continue
 
-    print(array)
+    return(array)
 
-bubble_sort(sequence)
+print(bubble_sort(sequence))
