@@ -1,7 +1,19 @@
-sequence = [4, 3, 5, 0, 1]
-swaps = 0
+def bubble_sort(sequence):
 
-# Your Code Here
+    y=0
 
-print(f"Final result: {result}")
-print(f"Swaps: {swaps}")
+    while y < (len(sequence)-1):
+    # for i, num in enumerate(sequence):
+        if sequence[y]>sequence[y+1]:
+            var1= sequence[y]
+            var2= sequence[y+1]
+            sequence[y] = var2
+            sequence[y+1] = var1
+            y=0
+        else:
+            y=y+1
+    result = sequence
+    print(f"Final result: {result}")
+    return result
+    # print(f"Swaps: {swaps}")
+bubble_sort([4, 3, 5, 0, 1])
