@@ -28,5 +28,3 @@ def bubble_sort(array):
             continue
 
     return(array)
-
-print(bubble_sort(sequence))
